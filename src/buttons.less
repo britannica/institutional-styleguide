@@ -1,0 +1,16 @@
+@import './variables';
+
+.btn-primary {
+  background-color: @color-primary-button;
+  color: @color-white;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: fade(@color-primary-button, 5%);
+  }
+}
+
+.btn-inline-block {
+  display: inline-block;
+}
