@@ -1,32 +1,29 @@
 {
-  "name": "institutional-styleguide",
-  "version": "0.0.1",
-  "description": "Styleguide for Institutional",
+  "name": "livingcss-demo",
+  "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "./node_modules/.bin/gulp watch",
+    "css:dist": "./node_modules/.bin/gulp css:dist",
+    "guide:build": "./node_modules/.bin/gulp guide:build",
+    "start": "./node_modules/.bin/gulp server:start",
+    "stop": "./node_modules/.bin/gulp server:stop"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/britannica/institutional-styleguide.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/britannica/institutional-styleguide/issues"
-  },
-  "homepage": "https://github.com/britannica/institutional-styleguide#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
     "gulp-concat": "^2.6.1",
-    "gulp-less": "^3.3.2",
-    "gulp-lesshint": "^4.0.0",
-    "gulp-util": "^3.0.8",
-    "gulp-watch": "^4.3.11"
+    "gulp-connect": "^5.2.0",
+    "gulp-livingcss": "^2.2.0",
+    "gulp-sass": "^3.1.0",
+    "livingcss": "github:straker/livingcss",
+    "run-sequence": "^2.2.1"
   },
   "dependencies": {
-    "ajv": "^5.5.1",
-    "gulp-stylelint": "^5.0.0"
+    "bootstrap-sass": "^3.3.7"
   }
 }

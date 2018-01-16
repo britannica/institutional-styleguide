@@ -1,31 +1,55 @@
-const gulp = require('gulp'),
-	  watch = require('gulp-watch'),
-	  less = require('gulp-less'),
-	  gutil = require('gulp-util'),
-		lesshint = require('gulp-lesshint'),
-		concat = require('gulp-concat'),
-		autoprefix = require('gulp-autoprefixer'),
-		lessDir = 'src',
-		targetCSSDir = 'public/css';
+
+const concat = require('gulp-concat');
+const connect = require('gulp-connect');
+const gulp = require('gulp');
+const livingcss = require('gulp-livingcss');
+const sass = require('gulp-sass');
 
 
-gulp.task('css', function () {
-    return gulp.src(lessDir + '/*.less')
-        .pipe(less({ style: 'compressed' }).on('error', gutil.log))
-        .pipe(autoprefix('last 2 version'))
-        .pipe(concat('main.css'))
-        .pipe(gulp.dest(targetCSSDir))
+// Build the style guide
+
+gulp.task('guide:build', ['css:dist'], () => {
+  gulp.src('./dist/*.css')
+    .pipe(livingcss('.', {
+      preprocess: (context, template, Handlebars) => {
+        context.title = 'Britannica Style Guide';
+
+        context.globalStylesheets.push('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css');
+        context.globalStylesheets.push('template-styles.css');
+      },
+      sortOrder: ['atoms', 'molecules', 'organisms', 'templates', 'pages'],
+    }))
+    .pipe(gulp.dest('./docs'));
 });
 
-gulp.task('watch', function () {
-    gulp.watch(lessDir + '**/*.less', ['lint','css']);
+
+// Build the CSS from our Sass
+
+gulp.task('css:dist', () => {
+  gulp.src(['./src/**/*.scss'])
+    .pipe(sass().on('error', sass.logError))
+    .pipe(concat('britannica-styles.css'))
+    .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('lint', () => {
-    return gulp.src('./src/*.less')
-        .pipe(lesshint({}))
-        .pipe(lesshint.reporter()) // Leave empty to use the default, "stylish"
-        .pipe(lesshint.failOnError()); // Use this to fail the task on lint errors
+
+// Rebuild everything whenever changes to .scss files are made
+
+gulp.task('watch', () => {
+  gulp.watch('./src/**/*.scss', ['guide:build']);
 });
 
-gulp.task('default', ['lint', 'css', 'watch']);
+
+// Start and stop the local server
+
+gulp.task('server:start', () => {
+  connect.server({
+    livereload: true,
+    port: 1234,
+    root: 'docs',
+  });
+});
+
+gulp.task('server:stop', () => {
+  connect.serverClose();
+});

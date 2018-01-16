@@ -1,0 +1,85 @@
+/**
+ * Button
+ *
+ * The first line is the section title, everything else is the description. You can also specify the section name
+ * using the `@section` tag below. e.g. `@section Button`.
+ *
+ * [Check out the LivingCSS documentation](https://github.com/straker/livingcss)
+ *
+ * #### This is an `<h4>` heading
+ *
+ * We can make description as many lines as we want. And use **whatever** *markdown* we want.
+ *
+ * [Link to Github's markdown guide](https://guides.github.com/features/mastering-markdown/)
+ *
+ * @example
+ * <p>
+ *   <button type="button" class="btn btn-primary">Primary</button>
+ *   <button type="button" class="btn btn-success">Success</button>
+ *   <button type="button" class="btn btn-info">Info</button>
+ *   <button type="button" class="btn btn-warning">Warning</button>
+ *   <button type="button" class="btn btn-danger">Danger</button>
+ *   <button type="button" class="btn btn-default">Default</button>
+ *   <button type="button" class="btn btn-link">Link</button>
+ * </p>
+ * <p>
+ *   <button type="button" class="btn btn-outline btn-primary">Primary</button>
+ *   <button type="button" class="btn btn-outline btn-success">Success</button>
+ *   <button type="button" class="btn btn-outline btn-info">Info</button>
+ *   <button type="button" class="btn btn-outline btn-warning">Warning</button>
+ *   <button type="button" class="btn btn-outline btn-danger">Danger</button>
+ * </p>
+ *
+ * @section
+ * @page Atoms
+ */
+.btn.btn-outline {
+  background-color: transparent; }
+  .btn.btn-outline:hover, .btn.btn-outline:focus, .btn.btn-outline:active {
+    outline: 0; }
+
+.btn-primary.btn-outline {
+  color: #337ab7; }
+  .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
+    background-color: rgba(51, 122, 183, 0.05);
+    color: #337ab7; }
+
+.btn-success.btn-outline {
+  color: #5cb85c; }
+  .btn-success.btn-outline:hover, .btn-success.btn-outline:focus, .btn-success.btn-outline:active {
+    background-color: rgba(92, 184, 92, 0.05);
+    color: #5cb85c; }
+
+.btn-info.btn-outline {
+  color: #5bc0de; }
+  .btn-info.btn-outline:hover, .btn-info.btn-outline:focus, .btn-info.btn-outline:active {
+    background-color: rgba(91, 192, 222, 0.05);
+    color: #5bc0de; }
+
+.btn-warning.btn-outline {
+  color: #f0ad4e; }
+  .btn-warning.btn-outline:hover, .btn-warning.btn-outline:focus, .btn-warning.btn-outline:active {
+    background-color: rgba(240, 173, 78, 0.05);
+    color: #f0ad4e; }
+
+.btn-danger.btn-outline {
+  color: #d9534f; }
+  .btn-danger.btn-outline:hover, .btn-danger.btn-outline:focus, .btn-danger.btn-outline:active {
+    background-color: rgba(217, 83, 79, 0.05);
+    color: #d9534f; }
+
+/**
+ * Description of the fancy molecule
+ *
+ * @example
+ * <div class="eb-molecule">
+ *   <button class="btn btn-primary">Button</button>
+ * </div>
+ *
+ * @section Fancy Molecule
+ * @page Molecules
+ */
+.eb-molecule {
+  border: 1px dotted blue;
+  border-radius: 3px;
+  padding: 15px; }
