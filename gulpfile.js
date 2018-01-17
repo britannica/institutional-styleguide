@@ -33,7 +33,8 @@ gulp.task('css:dist', () => {
 });
 
 
-// Rebuild everything whenever changes to .scss files are made
+// Rebuild everything whenever changes to .scss files are made. Doesn't work so well at the mo...
+// todo: figure out why this builds the previous save's version
 
 gulp.task('watch', () => {
   gulp.watch('./src/**/*.scss', ['guide:build']);
@@ -45,7 +46,7 @@ gulp.task('watch', () => {
 gulp.task('server:start', () => {
   connect.server({
     livereload: true,
-    port: 1234,
+    port: 3000,
     root: 'docs',
   });
 });
