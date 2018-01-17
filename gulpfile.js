@@ -9,17 +9,19 @@ const sass = require('gulp-sass');
 // Build the style guide
 
 gulp.task('guide:build', ['css:dist'], () => {
-  gulp.src('./dist/*.css')
-    .pipe(livingcss('.', {
-      preprocess: (context, template, Handlebars) => {
-        context.title = 'Britannica Style Guide';
+  setTimeout(() => {
+    gulp.src('./dist/*.css')
+      .pipe(livingcss('.', {
+        preprocess: (context, template, Handlebars) => {
+          context.title = 'Britannica Style Guide';
 
-        context.globalStylesheets.push('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css');
-        context.globalStylesheets.push('template-styles.css');
-      },
-      sortOrder: ['atoms', 'molecules', 'organisms', 'templates', 'pages'],
-    }))
-    .pipe(gulp.dest('./docs'));
+          context.globalStylesheets.push('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css');
+          context.globalStylesheets.push('template-styles.css');
+        },
+        sortOrder: ['atoms', 'molecules', 'organisms', 'templates', 'pages'],
+      }))
+      .pipe(gulp.dest('./docs'));
+  }, 250);
 });
 
 
