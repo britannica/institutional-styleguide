@@ -20,7 +20,7 @@
     "gulp-connect": "^5.2.0",
     "gulp-livingcss": "^2.2.0",
     "gulp-sass": "^3.1.0",
-    "livingcss": "github:straker/livingcss",
+    "livingcss": "^4.4.0",
     "run-sequence": "^2.2.1"
   },
   "dependencies": {
