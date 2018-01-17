@@ -12,7 +12,9 @@
 
 ### Running locally
 
-1. `npm start` (To shut it down, either `Ctrl + C` or `npm stop`)
+1. Open up a couple of Terminal tabs/windows (`Ctrl + T`)
+1. `npm start` in one tab (`Ctrl + C` to shut down the server) 
+1. `npm run watch` in the other tab (`Ctrl + C` to stop watching files)
 1. Navigate to `http://localhost:3000` in your browser
 
 
@@ -62,11 +64,11 @@ Product and UX will focus on writing the description using [Markdown](https://gu
 
 ### Building a new version of the style guide
 
-After making changes to `.scss` files, you will need to regenerate the style guide. This is done with the following task:
+With the `npm run watch` task running, every time you save changes to `.scss` files, a new guide will be generated.
+
+If you want to manually rebuild the style guide, you can run the following task:
 
 `npm run guide:build`
-
-This should only take a couple of seconds. Afterwards, you can refresh your browser to see the changes you've made.
 
 
 ### Publishing a new version of the style guide
