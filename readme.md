@@ -82,7 +82,7 @@ After you've verified your changes, it's time to commit and push them back to th
 
 1. `git commit -am "A description of the changes you made"`
 1. If this is the first push, you'll need to set the upstream branch: `git push -u origin master`
-1. If not: `git push origin master`
+1. On every subsequent push: `git push origin master`
 
 
 ## Including the style guide in a project
