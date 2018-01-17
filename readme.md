@@ -27,7 +27,7 @@ There are essentially 4 different parts to edit within the CSS file:
 1. The description of the component, which is the stuff in the comments above the `@example` part
 1. The `@example` in the comments
 1. Configuration of the `@section` and `@page`
-1. The actual implementation of the styles 
+1. The actual implementation of the styles
 
 Developers will focus on the `@example`, and the implementation details of the component.
 
@@ -42,7 +42,7 @@ Product and UX will focus on writing the description using [Markdown](https://gu
  *
  * This is the section that product and ux will maintain. The first line, in this case "Fancy Component", will be used as
  * the `@section` name.
- * 
+ *
  * ### This is an `<h3>` using Markdown
  *
  * The description will end here since the next part is the `@example`.
@@ -53,7 +53,7 @@ Product and UX will focus on writing the description using [Markdown](https://gu
  * @section
  * @page Atoms
  */
- 
+
 .example-component {
     /* implementation details */
 }
