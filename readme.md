@@ -66,12 +66,12 @@ After making changes to `.scss` files, you will need to regenerate the style gui
 
 `npm run guide:build`
 
-This should only take a couple of seconds. After that completes, you can refresh your browser to see the changes you've made.
+This should only take a couple of seconds. Afterwards, you can refresh your browser to see the changes you've made.
 
 
 ### Publishing a new version of the style guide
 
-After you've checked that the changes you've made look good, it's time to commit and push them back to the GitHub repo.
+After you've verified your changes, it's time to commit and push them back to the GitHub repo.
 
 **If you're using GitHub Desktop** (recommended for non-developers):
 
