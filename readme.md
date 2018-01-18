@@ -13,7 +13,8 @@
 ### Running locally
 
 1. Open up a couple of Terminal tabs/windows (`Ctrl + T`)
-1. `npm start` in one tab (`Ctrl + C` to shut down the server) 
+1. Change directory into the style guide project: `cd institutional-styleguide`
+1. `npm start` in one tab (`Ctrl + C` to shut down the server)
 1. `npm run watch` in the other tab (`Ctrl + C` to stop watching files)
 1. Navigate to `http://localhost:3000` in your browser
 
