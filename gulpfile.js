@@ -38,8 +38,7 @@ gulp.task('css:dist', () => {
 });
 
 
-// Rebuild everything whenever changes to .scss files are made. Doesn't work so well at the mo...
-// todo: figure out why this builds the previous save's version
+// Rebuild everything whenever changes to .scss files are made
 
 gulp.task('watch', () => {
   gulp.watch(['./src/**/*.scss', './src/**/*.md'], ['guide:build']);

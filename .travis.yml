@@ -1,0 +1,15 @@
+language: node_js
+
+node_js:
+  - node
+
+script:
+  - npm run guide:build
+
+deploy:
+  provider: pages
+  keep-history: true
+  skip-cleanup: true
+  local-dir: docs
+  target-branch: gh-pages
+  github-token: $GITHUB_TOKEN
