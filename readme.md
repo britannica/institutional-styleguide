@@ -1,4 +1,4 @@
-# Britannica Style Guide
+# Britannica Style Guide [![Build Status](https://travis-ci.org/britannica/institutional-styleguide.svg?branch=master)](https://travis-ci.org/britannica/institutional-styleguide)
 
 ## Setting up your local machine
 
