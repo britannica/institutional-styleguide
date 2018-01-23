@@ -6,6 +6,10 @@ node_js:
 script:
   - npm run guide:build
 
+branches:
+  only:
+    - master
+
 deploy:
   provider: pages
   keep-history: true
