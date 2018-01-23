@@ -1,4 +1,5 @@
 
+const autoprefixer = require('gulp-autoprefixer');
 const concat = require('gulp-concat');
 const connect = require('gulp-connect');
 const gulp = require('gulp');
@@ -34,6 +35,9 @@ gulp.task('css:dist', () => {
   gulp.src('./src/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(concat('britannica-styles.css'))
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+    }))
     .pipe(gulp.dest('./dist'));
 });
 
