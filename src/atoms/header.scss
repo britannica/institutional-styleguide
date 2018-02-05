@@ -1,0 +1,89 @@
+/**
+ * Headings
+ *
+ * @example
+ * <h1>This is a heading 1</h1>
+ * @section
+ * @page Atoms
+ */
+
+/**
+* Headings
+*
+* #### H2
+* content here
+* @example
+* <h2>This is a heading 2</h2>
+* @sectionof Headings
+* @page Atoms
+*/
+
+/**
+ * Headings
+ *
+ * #### H3
+ * content here
+ * @example
+ * <h3>This is a heading 3</h3>
+ * @sectionof Headings
+ * @page Atoms
+ */
+
+ /**
+  * Headings
+  *
+  * #### H4
+  * content here
+  * @example
+  * <h4>This is a heading 1</h4>
+  * @sectionof Headings
+  * @page Atoms
+  */
+
+/**
+ * Headings
+ *
+ * #### H5
+ * content here
+ * @example
+ * <h5>This is a heading 1</h5>
+ * @sectionof Headings
+ * @page Atoms
+ */
+
+ /**
+  * Headings
+  *
+  * #### H6
+  * content here
+  * @example
+  * <h6>This is a heading 1</h6>
+  * @sectionof Headings
+  * @page Atoms
+  */
+
+@import "../variables";
+
+h1, .h1 {
+  font-family: $default-font;
+  font-size: $headings-h1;
+  color: $color-headings-text;
+}
+h2, .h2 {
+  font-family: $default-font;
+  font-size: $headings-h2;
+  color: $color-headings-text;
+}
+h3, .h3 {
+  font-family: $default-font;
+  font-size: $headings-h3;
+  color: $color-headings-text;
+}
+h4, .h4 {
+  font-family: $default-font;
+  font-size: $headings-h4;
+  color: $color-headings-text;
+  text-transform: uppercase;
+}
+h5, .h5 {}
+h6, .h6 {}

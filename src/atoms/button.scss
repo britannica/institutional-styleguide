@@ -1,0 +1,62 @@
+
+/**
+ * buttons
+ *
+ * #### Primary Button
+ * content here
+ * #### Secondary Button
+ * content here
+ * #### Text Button
+ * content here
+ *
+ * @example
+ * <p>
+ *   <button type="button" class="btn btn-primary">Primary</button>
+ *   <button type="button" class="btn btn-success">Success</button>
+ *   <button type="button" class="btn btn-info">Info</button>
+ *   <button type="button" class="btn btn-warning">Warning</button>
+ *   <button type="button" class="btn btn-danger">Danger</button>
+ *   <button type="button" class="btn btn-default">Default</button>
+ *   <button type="button" class="btn btn-link">Link</button>
+ * </p>
+ * <p>
+ *   <button type="button" class="btn btn-outline btn-primary">Primary</button>
+ *   <button type="button" class="btn btn-outline btn-success">Success</button>
+ *   <button type="button" class="btn btn-outline btn-info">Info</button>
+ *   <button type="button" class="btn btn-outline btn-warning">Warning</button>
+ *   <button type="button" class="btn btn-outline btn-danger">Danger</button>
+ * </p>
+ *
+ * @section
+ * @page Atoms
+ */
+
+@import "../variables";
+
+.btn.btn-outline {
+    background-color: transparent;
+
+    &:hover, &:focus, &:active {
+        outline: 0;
+    }
+}
+
+@mixin btn-outline($class-name, $color) {
+    .#{$class-name} {
+
+        &.btn-outline {
+            color: $color;
+
+            &:hover, &:focus, &:active {
+                background-color: rgba($color, 0.05);
+                color: $color;
+            }
+        }
+    }
+}
+
+@include btn-outline(btn-primary, $btn-primary-bg);
+@include btn-outline(btn-success, $btn-success-bg);
+@include btn-outline(btn-info, $btn-info-bg);
+@include btn-outline(btn-warning, $btn-warning-bg);
+@include btn-outline(btn-danger, $btn-danger-bg);

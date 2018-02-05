@@ -1,5 +1,89 @@
 /**
- * Buttons
+ * Description of the fancy molecule
+ *
+ * @example
+ * <div class="eb-molecule">
+ *   <button class="btn btn-primary">Button</button>
+ * </div>
+ *
+ * Tester
+ *
+ * @section Fancy Molecule
+ * @page Molecules
+ */
+.eb-molecule {
+  border: 1px dotted blue;
+  border-radius: 3px;
+  padding: 15px; }
+
+/**
+ * a
+ *
+ *
+ * @example
+ *   <a class="primary" href="#">Primary</a><br />
+ * <a class="dark" href="#">Dark</a><br />
+ * <a class="light" href="#">Light</a><br />
+ * <a class="btn primary" href="#">Primary</a><br /><br />
+ * <a class="btn primary block" href="#">Primary</a><br />
+ * <a class="btn dark block" href="#">Primary</a><br />
+ * <a class="btn light block" href="#">Primary</a><br />
+ * @section
+ * @page Atoms
+ */
+.font-default {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-weight: 400; }
+
+.font-emphasis {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-weight: 700; }
+
+a {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px; }
+  a.primary {
+    color: #006dc1; }
+  a.dark {
+    color: #000; }
+  a.light {
+    color: #fff; }
+  a.btn.primary {
+    background-color: #006dc1;
+    color: #fff; }
+  a.btn.dark {
+    background-color: #000;
+    color: #fff; }
+  a.btn.light {
+    background-color: #fff;
+    color: #000; }
+  a.block {
+    display: block; }
+
+/**
+ * blockquote
+ * @section
+ * @page Atoms
+ * @example <blockquote cite="http://www.worldwildlife.org/who/index.html"> For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</blockquote>
+ */
+.font-default {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-weight: 400; }
+
+.font-emphasis {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-weight: 700; }
+
+blockquote {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px; }
+
+/**
+ * buttons
  *
  * #### Primary Button
  * content here
@@ -29,6 +113,16 @@
  * @section
  * @page Atoms
  */
+.font-default {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-weight: 400; }
+
+.font-emphasis {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-weight: 700; }
+
 .btn.btn-outline {
   background-color: transparent; }
   .btn.btn-outline:hover, .btn.btn-outline:focus, .btn.btn-outline:active {
@@ -65,6 +159,199 @@
     color: #d9534f; }
 
 /**
+ * Buttons
+ *
+ * #### Primary Button
+ * content here
+ * #### Secondary Button
+ * content here
+ * #### Text Button
+ * content here
+ *
+ * @example
+ * <p>
+ *   <button type="button" class="btn btn-primary">Primary</button>
+ *   <button type="button" class="btn btn-success">Success</button>
+ *   <button type="button" class="btn btn-info">Info</button>
+ *   <button type="button" class="btn btn-warning">Warning</button>
+ *   <button type="button" class="btn btn-danger">Danger</button>
+ *   <button type="button" class="btn btn-default">Default</button>
+ *   <button type="button" class="btn btn-link">Link</button>
+ * </p>
+ * <p>
+ *   <button type="button" class="btn btn-outline btn-primary">Primary</button>
+ *   <button type="button" class="btn btn-outline btn-success">Success</button>
+ *   <button type="button" class="btn btn-outline btn-info">Info</button>
+ *   <button type="button" class="btn btn-outline btn-warning">Warning</button>
+ *   <button type="button" class="btn btn-outline btn-danger">Danger</button>
+ * </p>
+ *
+ * @section
+ * @page Atoms
+ */
+.font-default {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-weight: 400; }
+
+.font-emphasis {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-weight: 700; }
+
+.btn.btn-outline {
+  background-color: transparent; }
+  .btn.btn-outline:hover, .btn.btn-outline:focus, .btn.btn-outline:active {
+    outline: 0; }
+
+.btn-primary.btn-outline {
+  color: #337ab7; }
+  .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
+    background-color: rgba(51, 122, 183, 0.05);
+    color: #337ab7; }
+
+.btn-success.btn-outline {
+  color: #5cb85c; }
+  .btn-success.btn-outline:hover, .btn-success.btn-outline:focus, .btn-success.btn-outline:active {
+    background-color: rgba(92, 184, 92, 0.05);
+    color: #5cb85c; }
+
+.btn-info.btn-outline {
+  color: #5bc0de; }
+  .btn-info.btn-outline:hover, .btn-info.btn-outline:focus, .btn-info.btn-outline:active {
+    background-color: rgba(91, 192, 222, 0.05);
+    color: #5bc0de; }
+
+.btn-warning.btn-outline {
+  color: #f0ad4e; }
+  .btn-warning.btn-outline:hover, .btn-warning.btn-outline:focus, .btn-warning.btn-outline:active {
+    background-color: rgba(240, 173, 78, 0.05);
+    color: #f0ad4e; }
+
+.btn-danger.btn-outline {
+  color: #d9534f; }
+  .btn-danger.btn-outline:hover, .btn-danger.btn-outline:focus, .btn-danger.btn-outline:active {
+    background-color: rgba(217, 83, 79, 0.05);
+    color: #d9534f; }
+
+/**
+ * cite
+ * @section
+ * @page Atoms
+ * @example <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+ */
+.font-default {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-weight: 400; }
+
+.font-emphasis {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-weight: 700; }
+
+/**
+ * dd
+ * @section
+ * @page Atoms
+ * @example
+ * <dl>
+ * <dt>Coffee</dt>
+ * <dd>Black hot drink</dd>
+ * <dt>Milk</dt>
+ * <dd>White cold drink</dd>
+ * </dl>
+ */
+.font-default {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-weight: 400; }
+
+.font-emphasis {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-weight: 700; }
+
+/**
+ * div
+ * @section
+ * @page Atoms
+ */
+.font-default {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-weight: 400; }
+
+.font-emphasis {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-weight: 700; }
+
+/**
+ * dl
+ * @section
+ * @page Atoms
+ * @example
+ * <dl>
+ * <dt>Coffee</dt>
+ * <dd>Black hot drink</dd>
+ * <dt>Milk</dt>
+ * <dd>White cold drink</dd>
+ * </dl>
+ */
+.font-default {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-weight: 400; }
+
+.font-emphasis {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-weight: 700; }
+
+/**
+ * dt
+ * @section
+ * @page Atoms
+ * @example
+ * <dl>
+ * <dt>Coffee</dt>
+ * <dd>Black hot drink</dd>
+ * <dt>Milk</dt>
+ * <dd>White cold drink</dd>
+ * </dl>
+ */
+.font-default {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-weight: 400; }
+
+.font-emphasis {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-weight: 700; }
+
+/**
+ * em
+ * @section
+ * @page Atoms
+ * @example
+ * <em>This is italic text</em>
+ */
+.font-default {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-weight: 400; }
+
+.font-emphasis {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-weight: 700; }
+
+em {
+  font-style: italic; }
+
+/**
  * Feedback
  *
  * #### Loading
@@ -75,6 +362,24 @@
  * @section
  * @page Atoms
  */
+
+/**
+ * fieldset
+ * @section
+ * @page Atoms
+ */
+.font-default {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-weight: 400; }
+
+.font-emphasis {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-weight: 700; }
+
+
+
 
 /**
  * Forms
@@ -123,75 +428,119 @@
  */
 
 /**
- * Miscellaneous
- *
- * This page has some helpful notes & links. It can also be used to practice markdown techniques.
- *
- * The first line is the section title, everything else is the description. You can also specify the section name
- * using the `@section` tag below. e.g. `@section Button`.
- *
- * [Check out the LivingCSS documentation](https://github.com/straker/livingcss)
- *
- * #### This is an `<h4>` heading
- *
- * We can make description as many lines as we want. And use **whatever** *markdown* we want.
- *
- * [Link to Github's markdown guide](https://guides.github.com/features/mastering-markdown/)
- *
- * [Link to Google](https://google.com/)
- *
- * Ok, here comes some changes...
- *
- * # Here's an H1
- *
- * ## Here's an H2
- *
- * ### And here's an H3
- *
- * **Here's some bold text**
- *
- * *And some italic text*
- *
- * And a link: http://www.cheaptrick.com
- *
- * To be continued...
- *
- * @section
- * @page Atoms
- */
-
-/**
- * Text
- *
- * #### Headings
- * content here
- * #### Horizontal Rules
- * content here
- * #### Inline Elements
- * content here
- * #### Paragraph (? why)
- * content here
- * #### Lists
- * content here
- *
- * @section
- * @page Atoms
- */
-
-/**
- * Description of the fancy molecule
+ * Headings
  *
  * @example
- * <div class="eb-molecule">
- *   <button class="btn btn-primary">Button</button>
- * </div>
- *
- * Tester
- *
- * @section Fancy Molecule
- * @page Molecules
+ * <h1>This is a heading 1</h1>
+ * @section
+ * @page Atoms
  */
-.eb-molecule {
-  border: 1px dotted blue;
-  border-radius: 3px;
-  padding: 15px; }
+/**
+* Headings
+*
+* #### H2
+* content here
+* @example
+* <h2>This is a heading 2</h2>
+* @sectionof Headings
+* @page Atoms
+*/
+/**
+ * Headings
+ *
+ * #### H3
+ * content here
+ * @example
+ * <h3>This is a heading 3</h3>
+ * @sectionof Headings
+ * @page Atoms
+ */
+/**
+  * Headings
+  *
+  * #### H4
+  * content here
+  * @example
+  * <h4>This is a heading 1</h4>
+  * @sectionof Headings
+  * @page Atoms
+  */
+/**
+ * Headings
+ *
+ * #### H5
+ * content here
+ * @example
+ * <h5>This is a heading 1</h5>
+ * @sectionof Headings
+ * @page Atoms
+ */
+/**
+  * Headings
+  *
+  * #### H6
+  * content here
+  * @example
+  * <h6>This is a heading 1</h6>
+  * @sectionof Headings
+  * @page Atoms
+  */
+.font-default {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-weight: 400; }
+
+.font-emphasis {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-weight: 700; }
+
+h1, .h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  color: #808080; }
+
+h2, .h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #808080; }
+
+h3, .h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #808080; }
+
+h4, .h4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  color: #808080;
+  text-transform: uppercase; }
+
+
+
+
+
+/**
+ * li
+ * @section
+ * @page Atoms
+ * @example
+ * <ol>
+ *  <li>Item 1</li>
+ *  <li>Item 2</li>
+ * </ol>
+ *
+ * <ul>
+  *   <li>Item 1</li>
+  *   <li>Item 2</li>
+  * </ul>
+ */
+.font-default {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-weight: 400; }
+
+.font-emphasis {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-weight: 700; }

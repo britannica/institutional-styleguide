@@ -8069,7 +8069,91 @@
     <template>
       <style>
       /**
-   * Buttons
+   * Description of the fancy molecule
+   *
+   * @example
+   * <div class="eb-molecule">
+   *   <button class="btn btn-primary">Button</button>
+   * </div>
+   *
+   * Tester
+   *
+   * @section Fancy Molecule
+   * @page Molecules
+   */
+  .eb-molecule {
+    border: 1px dotted blue;
+    border-radius: 3px;
+    padding: 15px; }
+  
+  /**
+   * a
+   *
+   *
+   * @example
+   *   <a class="primary" href="#">Primary</a><br />
+   * <a class="dark" href="#">Dark</a><br />
+   * <a class="light" href="#">Light</a><br />
+   * <a class="btn primary" href="#">Primary</a><br /><br />
+   * <a class="btn primary block" href="#">Primary</a><br />
+   * <a class="btn dark block" href="#">Primary</a><br />
+   * <a class="btn light block" href="#">Primary</a><br />
+   * @section
+   * @page Atoms
+   */
+  .font-default {
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    font-weight: 400; }
+  
+  .font-emphasis {
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    font-weight: 700; }
+  
+  a {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px; }
+    a.primary {
+      color: #006dc1; }
+    a.dark {
+      color: #000; }
+    a.light {
+      color: #fff; }
+    a.btn.primary {
+      background-color: #006dc1;
+      color: #fff; }
+    a.btn.dark {
+      background-color: #000;
+      color: #fff; }
+    a.btn.light {
+      background-color: #fff;
+      color: #000; }
+    a.block {
+      display: block; }
+  
+  /**
+   * blockquote
+   * @section
+   * @page Atoms
+   * @example <blockquote cite="http://www.worldwildlife.org/who/index.html"> For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</blockquote>
+   */
+  .font-default {
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    font-weight: 400; }
+  
+  .font-emphasis {
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    font-weight: 700; }
+  
+  blockquote {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px; }
+  
+  /**
+   * buttons
    *
    * #### Primary Button
    * content here
@@ -8099,6 +8183,16 @@
    * @section
    * @page Atoms
    */
+  .font-default {
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    font-weight: 400; }
+  
+  .font-emphasis {
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    font-weight: 700; }
+  
   .btn.btn-outline {
     background-color: transparent; }
     .btn.btn-outline:hover, .btn.btn-outline:focus, .btn.btn-outline:active {
@@ -8135,6 +8229,199 @@
       color: #d9534f; }
   
   /**
+   * Buttons
+   *
+   * #### Primary Button
+   * content here
+   * #### Secondary Button
+   * content here
+   * #### Text Button
+   * content here
+   *
+   * @example
+   * <p>
+   *   <button type="button" class="btn btn-primary">Primary</button>
+   *   <button type="button" class="btn btn-success">Success</button>
+   *   <button type="button" class="btn btn-info">Info</button>
+   *   <button type="button" class="btn btn-warning">Warning</button>
+   *   <button type="button" class="btn btn-danger">Danger</button>
+   *   <button type="button" class="btn btn-default">Default</button>
+   *   <button type="button" class="btn btn-link">Link</button>
+   * </p>
+   * <p>
+   *   <button type="button" class="btn btn-outline btn-primary">Primary</button>
+   *   <button type="button" class="btn btn-outline btn-success">Success</button>
+   *   <button type="button" class="btn btn-outline btn-info">Info</button>
+   *   <button type="button" class="btn btn-outline btn-warning">Warning</button>
+   *   <button type="button" class="btn btn-outline btn-danger">Danger</button>
+   * </p>
+   *
+   * @section
+   * @page Atoms
+   */
+  .font-default {
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    font-weight: 400; }
+  
+  .font-emphasis {
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    font-weight: 700; }
+  
+  .btn.btn-outline {
+    background-color: transparent; }
+    .btn.btn-outline:hover, .btn.btn-outline:focus, .btn.btn-outline:active {
+      outline: 0; }
+  
+  .btn-primary.btn-outline {
+    color: #337ab7; }
+    .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
+      background-color: rgba(51, 122, 183, 0.05);
+      color: #337ab7; }
+  
+  .btn-success.btn-outline {
+    color: #5cb85c; }
+    .btn-success.btn-outline:hover, .btn-success.btn-outline:focus, .btn-success.btn-outline:active {
+      background-color: rgba(92, 184, 92, 0.05);
+      color: #5cb85c; }
+  
+  .btn-info.btn-outline {
+    color: #5bc0de; }
+    .btn-info.btn-outline:hover, .btn-info.btn-outline:focus, .btn-info.btn-outline:active {
+      background-color: rgba(91, 192, 222, 0.05);
+      color: #5bc0de; }
+  
+  .btn-warning.btn-outline {
+    color: #f0ad4e; }
+    .btn-warning.btn-outline:hover, .btn-warning.btn-outline:focus, .btn-warning.btn-outline:active {
+      background-color: rgba(240, 173, 78, 0.05);
+      color: #f0ad4e; }
+  
+  .btn-danger.btn-outline {
+    color: #d9534f; }
+    .btn-danger.btn-outline:hover, .btn-danger.btn-outline:focus, .btn-danger.btn-outline:active {
+      background-color: rgba(217, 83, 79, 0.05);
+      color: #d9534f; }
+  
+  /**
+   * cite
+   * @section
+   * @page Atoms
+   * @example <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+   */
+  .font-default {
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    font-weight: 400; }
+  
+  .font-emphasis {
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    font-weight: 700; }
+  
+  /**
+   * dd
+   * @section
+   * @page Atoms
+   * @example
+   * <dl>
+   * <dt>Coffee</dt>
+   * <dd>Black hot drink</dd>
+   * <dt>Milk</dt>
+   * <dd>White cold drink</dd>
+   * </dl>
+   */
+  .font-default {
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    font-weight: 400; }
+  
+  .font-emphasis {
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    font-weight: 700; }
+  
+  /**
+   * div
+   * @section
+   * @page Atoms
+   */
+  .font-default {
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    font-weight: 400; }
+  
+  .font-emphasis {
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    font-weight: 700; }
+  
+  /**
+   * dl
+   * @section
+   * @page Atoms
+   * @example
+   * <dl>
+   * <dt>Coffee</dt>
+   * <dd>Black hot drink</dd>
+   * <dt>Milk</dt>
+   * <dd>White cold drink</dd>
+   * </dl>
+   */
+  .font-default {
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    font-weight: 400; }
+  
+  .font-emphasis {
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    font-weight: 700; }
+  
+  /**
+   * dt
+   * @section
+   * @page Atoms
+   * @example
+   * <dl>
+   * <dt>Coffee</dt>
+   * <dd>Black hot drink</dd>
+   * <dt>Milk</dt>
+   * <dd>White cold drink</dd>
+   * </dl>
+   */
+  .font-default {
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    font-weight: 400; }
+  
+  .font-emphasis {
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    font-weight: 700; }
+  
+  /**
+   * em
+   * @section
+   * @page Atoms
+   * @example
+   * <em>This is italic text</em>
+   */
+  .font-default {
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    font-weight: 400; }
+  
+  .font-emphasis {
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    font-weight: 700; }
+  
+  em {
+    font-style: italic; }
+  
+  /**
    * Feedback
    *
    * #### Loading
@@ -8145,6 +8432,24 @@
    * @section
    * @page Atoms
    */
+  
+  /**
+   * fieldset
+   * @section
+   * @page Atoms
+   */
+  .font-default {
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    font-weight: 400; }
+  
+  .font-emphasis {
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    font-weight: 700; }
+  
+  
+  
   
   /**
    * Forms
@@ -8193,78 +8498,122 @@
    */
   
   /**
-   * Miscellaneous
-   *
-   * This page has some helpful notes & links. It can also be used to practice markdown techniques.
-   *
-   * The first line is the section title, everything else is the description. You can also specify the section name
-   * using the `@section` tag below. e.g. `@section Button`.
-   *
-   * [Check out the LivingCSS documentation](https://github.com/straker/livingcss)
-   *
-   * #### This is an `<h4>` heading
-   *
-   * We can make description as many lines as we want. And use **whatever** *markdown* we want.
-   *
-   * [Link to Github's markdown guide](https://guides.github.com/features/mastering-markdown/)
-   *
-   * [Link to Google](https://google.com/)
-   *
-   * Ok, here comes some changes...
-   *
-   * # Here's an H1
-   *
-   * ## Here's an H2
-   *
-   * ### And here's an H3
-   *
-   * **Here's some bold text**
-   *
-   * *And some italic text*
-   *
-   * And a link: http://www.cheaptrick.com
-   *
-   * To be continued...
-   *
-   * @section
-   * @page Atoms
-   */
-  
-  /**
-   * Text
-   *
-   * #### Headings
-   * content here
-   * #### Horizontal Rules
-   * content here
-   * #### Inline Elements
-   * content here
-   * #### Paragraph (? why)
-   * content here
-   * #### Lists
-   * content here
-   *
-   * @section
-   * @page Atoms
-   */
-  
-  /**
-   * Description of the fancy molecule
+   * Headings
    *
    * @example
-   * <div class="eb-molecule">
-   *   <button class="btn btn-primary">Button</button>
-   * </div>
-   *
-   * Tester
-   *
-   * @section Fancy Molecule
-   * @page Molecules
+   * <h1>This is a heading 1</h1>
+   * @section
+   * @page Atoms
    */
-  .eb-molecule {
-    border: 1px dotted blue;
-    border-radius: 3px;
-    padding: 15px; }
+  /**
+  * Headings
+  *
+  * #### H2
+  * content here
+  * @example
+  * <h2>This is a heading 2</h2>
+  * @sectionof Headings
+  * @page Atoms
+  */
+  /**
+   * Headings
+   *
+   * #### H3
+   * content here
+   * @example
+   * <h3>This is a heading 3</h3>
+   * @sectionof Headings
+   * @page Atoms
+   */
+  /**
+    * Headings
+    *
+    * #### H4
+    * content here
+    * @example
+    * <h4>This is a heading 1</h4>
+    * @sectionof Headings
+    * @page Atoms
+    */
+  /**
+   * Headings
+   *
+   * #### H5
+   * content here
+   * @example
+   * <h5>This is a heading 1</h5>
+   * @sectionof Headings
+   * @page Atoms
+   */
+  /**
+    * Headings
+    *
+    * #### H6
+    * content here
+    * @example
+    * <h6>This is a heading 1</h6>
+    * @sectionof Headings
+    * @page Atoms
+    */
+  .font-default {
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    font-weight: 400; }
+  
+  .font-emphasis {
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    font-weight: 700; }
+  
+  h1, .h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    color: #808080; }
+  
+  h2, .h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    color: #808080; }
+  
+  h3, .h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #808080; }
+  
+  h4, .h4 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    color: #808080;
+    text-transform: uppercase; }
+  
+  
+  
+  
+  
+  /**
+   * li
+   * @section
+   * @page Atoms
+   * @example
+   * <ol>
+   *  <li>Item 1</li>
+   *  <li>Item 2</li>
+   * </ol>
+   *
+   * <ul>
+    *   <li>Item 1</li>
+    *   <li>Item 2</li>
+    * </ul>
+   */
+  .font-default {
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    font-weight: 400; }
+  
+  .font-emphasis {
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    font-weight: 700; }
   
   
       </style>
@@ -8335,6 +8684,83 @@
 
       <main class="livingcss__main" role="main">
 
+        <article class="livingcss__article" id="a">
+          <h1 class="livingcss__article-title">a</h1><div class="livingcss__section-description"></div>
+
+<livingcss-example><a class="primary" href="#">Primary</a><br />
+<a class="dark" href="#">Dark</a><br />
+<a class="light" href="#">Light</a><br />
+<a class="btn primary" href="#">Primary</a><br /><br />
+<a class="btn primary block" href="#">Primary</a><br />
+<a class="btn dark block" href="#">Primary</a><br />
+<a class="btn light block" href="#">Primary</a><br /></livingcss-example>
+
+<div class="livingcss__section-markup">
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;a class&#x3D;&quot;primary&quot; href&#x3D;&quot;#&quot;&gt;Primary&lt;/a&gt;&lt;br /&gt;
+&lt;a class&#x3D;&quot;dark&quot; href&#x3D;&quot;#&quot;&gt;Dark&lt;/a&gt;&lt;br /&gt;
+&lt;a class&#x3D;&quot;light&quot; href&#x3D;&quot;#&quot;&gt;Light&lt;/a&gt;&lt;br /&gt;
+&lt;a class&#x3D;&quot;btn primary&quot; href&#x3D;&quot;#&quot;&gt;Primary&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;a class&#x3D;&quot;btn primary block&quot; href&#x3D;&quot;#&quot;&gt;Primary&lt;/a&gt;&lt;br /&gt;
+&lt;a class&#x3D;&quot;btn dark block&quot; href&#x3D;&quot;#&quot;&gt;Primary&lt;/a&gt;&lt;br /&gt;
+&lt;a class&#x3D;&quot;btn light block&quot; href&#x3D;&quot;#&quot;&gt;Primary&lt;/a&gt;&lt;br /&gt;</code></pre>
+</div>
+
+        </article>
+        <article class="livingcss__article" id="blockquote">
+          <h1 class="livingcss__article-title">blockquote</h1><div class="livingcss__section-description"></div>
+
+<livingcss-example><blockquote cite="http://www.worldwildlife.org/who/index.html"> For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</blockquote></livingcss-example>
+
+<div class="livingcss__section-markup">
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;blockquote cite&#x3D;&quot;http://www.worldwildlife.org/who/index.html&quot;&gt; For 50 years, WWF has been protecting the future of nature. The world&#x27;s leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.&lt;/blockquote&gt;</code></pre>
+</div>
+
+        </article>
+        <article class="livingcss__article" id="buttons">
+          <h1 class="livingcss__article-title">buttons</h1><div class="livingcss__section-description"><h4 id="primary-button">Primary Button</h4>
+<p>content here</p>
+<h4 id="secondary-button">Secondary Button</h4>
+<p>content here</p>
+<h4 id="text-button">Text Button</h4>
+<p>content here</p></div>
+
+<livingcss-example><p>
+  <button type="button" class="btn btn-primary">Primary</button>
+  <button type="button" class="btn btn-success">Success</button>
+  <button type="button" class="btn btn-info">Info</button>
+  <button type="button" class="btn btn-warning">Warning</button>
+  <button type="button" class="btn btn-danger">Danger</button>
+  <button type="button" class="btn btn-default">Default</button>
+  <button type="button" class="btn btn-link">Link</button>
+</p>
+<p>
+  <button type="button" class="btn btn-outline btn-primary">Primary</button>
+  <button type="button" class="btn btn-outline btn-success">Success</button>
+  <button type="button" class="btn btn-outline btn-info">Info</button>
+  <button type="button" class="btn btn-outline btn-warning">Warning</button>
+  <button type="button" class="btn btn-outline btn-danger">Danger</button>
+</p></livingcss-example>
+
+<div class="livingcss__section-markup">
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;p&gt;
+  &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
+  &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;
+  &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;
+  &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;
+  &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;
+  &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default&quot;&gt;Default&lt;/button&gt;
+  &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-link&quot;&gt;Link&lt;/button&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline btn-primary&quot;&gt;Primary&lt;/button&gt;
+  &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline btn-success&quot;&gt;Success&lt;/button&gt;
+  &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline btn-info&quot;&gt;Info&lt;/button&gt;
+  &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline btn-warning&quot;&gt;Warning&lt;/button&gt;
+  &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline btn-danger&quot;&gt;Danger&lt;/button&gt;
+&lt;/p&gt;</code></pre>
+</div>
+
+        </article>
         <article class="livingcss__article" id="buttons">
           <h1 class="livingcss__article-title">Buttons</h1><div class="livingcss__section-description"><h4 id="primary-button">Primary Button</h4>
 <p>content here</p>
@@ -8380,11 +8806,103 @@
 </div>
 
         </article>
+        <article class="livingcss__article" id="cite">
+          <h1 class="livingcss__article-title">cite</h1><div class="livingcss__section-description"></div>
+
+<livingcss-example><p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p></livingcss-example>
+
+<div class="livingcss__section-markup">
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;p&gt;&lt;cite&gt;The Scream&lt;/cite&gt; by Edward Munch. Painted in 1893.&lt;/p&gt;</code></pre>
+</div>
+
+        </article>
+        <article class="livingcss__article" id="dd">
+          <h1 class="livingcss__article-title">dd</h1><div class="livingcss__section-description"></div>
+
+<livingcss-example><dl>
+<dt>Coffee</dt>
+<dd>Black hot drink</dd>
+<dt>Milk</dt>
+<dd>White cold drink</dd>
+</dl></livingcss-example>
+
+<div class="livingcss__section-markup">
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;dl&gt;
+&lt;dt&gt;Coffee&lt;/dt&gt;
+&lt;dd&gt;Black hot drink&lt;/dd&gt;
+&lt;dt&gt;Milk&lt;/dt&gt;
+&lt;dd&gt;White cold drink&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+</div>
+
+        </article>
+        <article class="livingcss__article" id="div">
+          <h1 class="livingcss__article-title">div</h1><div class="livingcss__section-description"></div>
+
+
+
+        </article>
+        <article class="livingcss__article" id="dl">
+          <h1 class="livingcss__article-title">dl</h1><div class="livingcss__section-description"></div>
+
+<livingcss-example><dl>
+<dt>Coffee</dt>
+<dd>Black hot drink</dd>
+<dt>Milk</dt>
+<dd>White cold drink</dd>
+</dl></livingcss-example>
+
+<div class="livingcss__section-markup">
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;dl&gt;
+&lt;dt&gt;Coffee&lt;/dt&gt;
+&lt;dd&gt;Black hot drink&lt;/dd&gt;
+&lt;dt&gt;Milk&lt;/dt&gt;
+&lt;dd&gt;White cold drink&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+</div>
+
+        </article>
+        <article class="livingcss__article" id="dt">
+          <h1 class="livingcss__article-title">dt</h1><div class="livingcss__section-description"></div>
+
+<livingcss-example><dl>
+<dt>Coffee</dt>
+<dd>Black hot drink</dd>
+<dt>Milk</dt>
+<dd>White cold drink</dd>
+</dl></livingcss-example>
+
+<div class="livingcss__section-markup">
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;dl&gt;
+&lt;dt&gt;Coffee&lt;/dt&gt;
+&lt;dd&gt;Black hot drink&lt;/dd&gt;
+&lt;dt&gt;Milk&lt;/dt&gt;
+&lt;dd&gt;White cold drink&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+</div>
+
+        </article>
+        <article class="livingcss__article" id="em">
+          <h1 class="livingcss__article-title">em</h1><div class="livingcss__section-description"></div>
+
+<livingcss-example><em>This is italic text</em></livingcss-example>
+
+<div class="livingcss__section-markup">
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;em&gt;This is italic text&lt;/em&gt;</code></pre>
+</div>
+
+        </article>
         <article class="livingcss__article" id="feedback">
           <h1 class="livingcss__article-title">Feedback</h1><div class="livingcss__section-description"><h4 id="loading">Loading</h4>
 <p>content here</p>
 <h4 id="progress">Progress</h4>
 <p>content here</p></div>
+
+
+
+        </article>
+        <article class="livingcss__article" id="fieldset">
+          <h1 class="livingcss__article-title">fieldset</h1><div class="livingcss__section-description"></div>
 
 
 
@@ -8429,40 +8947,85 @@
 
 
         </article>
-        <article class="livingcss__article" id="miscellaneous">
-          <h1 class="livingcss__article-title">Miscellaneous</h1><div class="livingcss__section-description"><p>This page has some helpful notes &amp; links. It can also be used to practice markdown techniques.</p>
-<p>The first line is the section title, everything else is the description. You can also specify the section name
-using the <code>@section</code> tag below. e.g. <code>@section Button</code>.</p>
-<p><a href="https://github.com/straker/livingcss">Check out the LivingCSS documentation</a></p>
-<h4 id="this-is-an-h4-heading">This is an <code>&lt;h4&gt;</code> heading</h4>
-<p>We can make description as many lines as we want. And use <strong>whatever</strong> <em>markdown</em> we want.</p>
-<p><a href="https://guides.github.com/features/mastering-markdown/">Link to Github&#39;s markdown guide</a></p>
-<p><a href="https://google.com/">Link to Google</a></p>
-<p>Ok, here comes some changes...</p>
-<h1 id="here-s-an-h1">Here&#39;s an H1</h1>
-<h2 id="here-s-an-h2">Here&#39;s an H2</h2>
-<h3 id="and-here-s-an-h3">And here&#39;s an H3</h3>
-<p><strong>Here&#39;s some bold text</strong></p>
-<p><em>And some italic text</em></p>
-<p>And a link: <a href="http://www.cheaptrick.com">http://www.cheaptrick.com</a></p>
-<p>To be continued...</p></div>
+        <article class="livingcss__article" id="headings">
+          <h1 class="livingcss__article-title">Headings</h1><div class="livingcss__section-description"></div>
 
+<livingcss-example><h1>This is a heading 1</h1></livingcss-example>
 
+<div class="livingcss__section-markup">
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;h1&gt;This is a heading 1&lt;/h1&gt;</code></pre>
+</div>
 
-        </article>
-        <article class="livingcss__article" id="text">
-          <h1 class="livingcss__article-title">Text</h1><div class="livingcss__section-description"><h4 id="headings">Headings</h4>
-<p>content here</p>
-<h4 id="horizontal-rules">Horizontal Rules</h4>
-<p>content here</p>
-<h4 id="inline-elements">Inline Elements</h4>
-<p>content here</p>
-<h4 id="paragraph-why-">Paragraph (? why)</h4>
-<p>content here</p>
-<h4 id="lists">Lists</h4>
-<p>content here</p></div>
+<section class="livingcss__section" id="headings-undefined">
+  <h2></h2><div class="livingcss__section-description"></div>
 
+<livingcss-example><h2>This is a heading 2</h2></livingcss-example>
 
+<div class="livingcss__section-markup">
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;h2&gt;This is a heading 2&lt;/h2&gt;</code></pre>
+</div>
+
+</section><section class="livingcss__section" id="headings-undefined">
+  <h2></h2><div class="livingcss__section-description"></div>
+
+<livingcss-example><h3>This is a heading 3</h3></livingcss-example>
+
+<div class="livingcss__section-markup">
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;h3&gt;This is a heading 3&lt;/h3&gt;</code></pre>
+</div>
+
+</section><section class="livingcss__section" id="headings-undefined">
+  <h2></h2><div class="livingcss__section-description"></div>
+
+<livingcss-example><h4>This is a heading 1</h4></livingcss-example>
+
+<div class="livingcss__section-markup">
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;h4&gt;This is a heading 1&lt;/h4&gt;</code></pre>
+</div>
+
+</section><section class="livingcss__section" id="headings-undefined">
+  <h2></h2><div class="livingcss__section-description"></div>
+
+<livingcss-example><h5>This is a heading 1</h5></livingcss-example>
+
+<div class="livingcss__section-markup">
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;h5&gt;This is a heading 1&lt;/h5&gt;</code></pre>
+</div>
+
+</section><section class="livingcss__section" id="headings-undefined">
+  <h2></h2><div class="livingcss__section-description"></div>
+
+<livingcss-example><h6>This is a heading 1</h6></livingcss-example>
+
+<div class="livingcss__section-markup">
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;h6&gt;This is a heading 1&lt;/h6&gt;</code></pre>
+</div>
+
+</section>        </article>
+        <article class="livingcss__article" id="li">
+          <h1 class="livingcss__article-title">li</h1><div class="livingcss__section-description"></div>
+
+<livingcss-example><ol>
+ <li>Item 1</li>
+ <li>Item 2</li>
+</ol>
+
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+</ul></livingcss-example>
+
+<div class="livingcss__section-markup">
+  <pre class="livingcss__section-code"><code class="language-markup">&lt;ol&gt;
+ &lt;li&gt;Item 1&lt;/li&gt;
+ &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
 
         </article>
 
@@ -8470,12 +9033,22 @@ using the <code>@section</code> tag below. e.g. <code>@section Button</code>.</p
 
       <nav class="livingcss__nav">
         <div class="livingcss__nav-container">
+          <a class="livingcss__nav-link" href="#a">a</a>
+          <a class="livingcss__nav-link" href="#blockquote">blockquote</a>
+          <a class="livingcss__nav-link" href="#buttons">buttons</a>
           <a class="livingcss__nav-link" href="#buttons">Buttons</a>
+          <a class="livingcss__nav-link" href="#cite">cite</a>
+          <a class="livingcss__nav-link" href="#dd">dd</a>
+          <a class="livingcss__nav-link" href="#div">div</a>
+          <a class="livingcss__nav-link" href="#dl">dl</a>
+          <a class="livingcss__nav-link" href="#dt">dt</a>
+          <a class="livingcss__nav-link" href="#em">em</a>
           <a class="livingcss__nav-link" href="#feedback">Feedback</a>
+          <a class="livingcss__nav-link" href="#fieldset">fieldset</a>
           <a class="livingcss__nav-link" href="#forms">Forms</a>
           <a class="livingcss__nav-link" href="#global">Global</a>
-          <a class="livingcss__nav-link" href="#miscellaneous">Miscellaneous</a>
-          <a class="livingcss__nav-link" href="#text">Text</a>
+          <a class="livingcss__nav-link" href="#headings">Headings</a>
+          <a class="livingcss__nav-link" href="#li">li</a>
         </div>
       </nav>
 

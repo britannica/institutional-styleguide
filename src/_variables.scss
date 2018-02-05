@@ -1,2 +1,57 @@
 
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+
+$typography-weight-bold: 700;
+$typography-weight-default: 400;
+$default-font: 'Open Sans', sans-serif;
+$typography-line-height-tight: 1.2;
+$typography-line-height-default: 1.5;
+$typography-line-height-loose: 1.7;
+$headings-h1: 24px;
+$headings-h2: 18px;
+$headings-h3: 16px;
+$headings-h4: 12px;
+
+$primary: #006dc1;
+$dark: #000;
+$light: #fff;
+$color-headings-text: #808080;
+$color-default-text: #333333;
+$color-promo-text: #339933;
+$color-form-error: #cc0000;
+$color-place-holder: #999999;
+$color-additional-link: #006dc1;
+$color-page-background: #e3e4e5;
+$color-borders: #d2d2d2;
+$color-primary-1: #026dc1;
+$color-accent-1: #deeefa;
+$color-primary-button: #026dc1;
+$color-white: #ffffff;
+
+$sansFontFamily:  'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$serifFontFamily: 'PT Serif', Georgia, 'Times New Roman', Times, serif;
+$monoFontFamily:  Menlo, Monaco, Consolas, 'Courier New', monospace;
+$nunitoFontFamily: 'Nunito', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$MontserratFontFamily: 'Montserrat', sans-serif;
+
+.font-default {
+  font-family: $default-font;
+  color: $color-default-text;
+  font-weight: $typography-weight-default;
+}
+
+.font-emphasis {
+  font-family: $default-font;
+  color: $color-default-text;
+  font-weight: $typography-weight-bold;
+}
+
+$baseFontSize:   14px;
+$baseFontFamily: $sansFontFamily;
+$baseLineHeight: 21px;
+$altFontFamily:  $serifFontFamily;
+
+$headings-h1: 24px;
+$headings-h2: 18px;
+$headings-h3: 16px;
+$headings-h4: 12px;

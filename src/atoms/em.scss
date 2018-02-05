@@ -1,0 +1,13 @@
+/**
+ * em
+ * @section
+ * @page Atoms
+ * @example
+ * <em>This is italic text</em>
+ */
+
+@import "../variables";
+
+em {
+  font-style: italic;
+}
